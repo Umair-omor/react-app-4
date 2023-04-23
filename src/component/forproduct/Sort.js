@@ -20,22 +20,22 @@ const Sort = () => {
     dispatch(currentsortvalue(e));
   }
   
-  const sortData = products.sort((a, b) => {
-     if(slect === "lowest"){
-      return a.price - b.price;
-     }
-     if(slect === "highest"){
-      return b.price - a.price;
-     }
-     if(slect === "a-z"){
-      return a.name.localeCompare(b.name)
-     }
-     if(slect === "z-a"){
-      return b.name.localeCompare(a.name)
-     }
-  });
+  // const sortData = products.sort((a, b) => {
+  //    if(slect === "lowest"){
+  //     return a.price - b.price;
+  //    }
+  //    if(slect === "highest"){
+  //     return b.price - a.price;
+  //    }
+  //    if(slect === "a-z"){
+  //     return a.name.localeCompare(b.name)
+  //    }
+  //    if(slect === "z-a"){
+  //     return b.name.localeCompare(a.name)
+  //    }
+  // });
 
-  dispatch(sortingproductStor(sortData));
+  // dispatch(sortingproductStor(sortData));
   // console.log(sortData);
 
 
