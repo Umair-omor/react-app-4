@@ -1,0 +1,15 @@
+.feature-container{
+    margin-top: 120px;
+}
+.feature-title{
+    text-transform: capitalize;
+    font-size: 30px;
+}
+
+.feature-products{
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    background-color: aquamarine;
+}
+

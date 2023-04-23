@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
+
+.font{
+    font-size: 18px;
+    font-weight: 500;
+    color: #444;
+    text-decoration: none;
+    transition: all .04s ease;
+    position: relative;
+    transition: 0.3s;
+}
+
+.font.active{
+    color: #00bfff;
+}
+.font.active:hover{
+    color:#0098ca ;
+}
+.font:hover{
+    color: #000;
+}
+.font::after{
+    content: "";
+    position: absolute;
+    background-color: #000;
+    height: 2px;
+    width: 0;
+    left: 0;
+    bottom: -2px;
+    border-radius: 10px;
+    transition: 0.4s;
+}
+
+.font:hover::after{
+    width: 100%;
+}
+.font.active::after{
+    background-color:#0098ca;
+}
+.font.active:hover::after{
+    width: 100%;
+}
+.main-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 20px;
+    background-color: #ffffff;
+    box-shadow: 1px 1px 5px #777777 ;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    background: linear-gradient(45deg, #f6d8f8, #b5e8f8);
+}
+.main-nav:hover{
+    background: linear-gradient(-45deg, #f6d8f8, #b5e8f8);
+}
+.nav-icon{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+.logo-img{
+    width: 30px;
+}
+.logo-font{
+    font-family: 'Hammersmith One', sans-serif;
+    font-weight: 600;
+    font-size: 27px;
+    letter-spacing: 1px;
+    padding-left: 4px;
+    color: #000;
+    margin: 0;
+}
+.nav-button{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.cart-icon{
+    color: #444;
+    font-size: 26px;
+    transition: 0.3s;
+}
+.cart-icon:hover{
+    transform: scale(1.1);
+}
+.cart-icon:hover::after{
+    width: 0;
+}
+.cart-icon.active:hover::after{
+    width: 0;
+}
+.small-nav{
+    display: none;
+}
+.small-nav-icn{
+    font-size: 25px;
+    cursor: pointer;
+    position: relative;
+    
+}
+
+
+@media (max-width: 720px){
+    .main-nav{
+        /* position: fixed; */
+        /* background-color: cadetblue; */
+    }
+    .nav-button{
+        background-color: #ffffff;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: 63px;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        z-index: 9;
+        justify-content: center;
+        align-items: center;
+        display: none;
+    }
+    .nav-button.active{
+        display: flex;
+    }
+    .small-nav{
+        display: block;
+        /* transform: translateX(100%); */
+    }
+
+}
+
+
+
+
+
+
+

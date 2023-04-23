@@ -1,7 +1,7 @@
-.App {
+/*.App {
   text-align: center;
 }
-
+ 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -35,4 +35,109 @@
   to {
     transform: rotate(360deg);
   }
+} */
+/* ================================= */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
+Link{
+  text-decoration: none;
+}
+.container{
+  width: 100%;
+  padding: 20px 30px;
+}
+
+.simlr-btn{
+  /* color: #0098ca;
+  color: #00BFFF;  
+  color: #6254f3; 
+  color: #311234;
+  color: #852b8d 
+  */
+  background-color: #852b8d;
+  color: #fff;
+  font-size: 18px;
+  text-decoration: none;
+  padding: 12px 30px;
+  font-weight: 500;
+  border-radius: 4px;
+  display: inline-block;
+  text-transform:capitalize;
+  transition: .3s;
+  transform: perspective(1px) translateZ(0);
+  border: none;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar {
+  width: 9px;
+  /* width: 0; */
+}
+::-webkit-scrollbar-track {
+  background: #e6e6e6;
+  /* background: linear-gradient(180deg, #f6d8f8, #b5e8f8); */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 20px;
+  border: 1px solid #e6e6e6;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+
+
+
+
+@keyframes button-push{
+  50%{
+    transform: scale(0.9);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+.simlr-btn:hover{
+  animation-name: button-push;
+  animation-duration: .2s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  /* background-color: #852b8d;
+  background-color: #00a6dd;
+  background-color: #00BFFF; */
+  background-color: #0098ca;
+  transform: scale(1);
+} 
+
+.lod-err{
+  text-align: center;
+  font-size: 26px;
+  font-weight: 600;
+}
+
+@media (max-width: 900px){
+  .container{
+    padding: 20px 20px;
+  }
+}
+
+
+@media (max-width: 720px){
+  .container{
+    padding: 15px;
+  }
+}
+
+
+
+
+

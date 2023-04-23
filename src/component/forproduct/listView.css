@@ -1,0 +1,130 @@
+.list-view{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.link{
+    text-decoration: none;
+    color: #000;
+    
+}
+.read-btn{
+    padding: 10px 30px;
+    font-size: 15px;
+    font-weight: 500;
+}
+.product-list-card{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    background-color: #e6e6e6;
+    border-radius: 5px;
+    transition: .4s;
+    position: relative;
+}
+.product-list-card:hover {
+    transform:translateY(-3px);
+    box-shadow: 0.2px 0.2px 10px #bdbdbd;
+}
+.product-list-card img{
+    width: 50%;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.product-list-text{
+    width: 50%;
+    padding: 15px 15px 15px 0;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+.list-caption{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: #b3b3b3;
+    /* color: #ffff; */
+    padding: 4px 14px;
+    border-radius: 25px;
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+.product-list-text .name{
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: capitalize;
+} 
+.product-list-text .price{
+    font-size: 16px;
+    font-weight: 400;
+} 
+.product-list-text p{
+    font-size: 14px;
+    text-transform: capitalize;
+} 
+.product-list-text .buttons{
+    display: flex;
+    gap: 30px;
+    padding-top: 5px;
+}
+
+@media (max-width: 920px){
+    .read-btn{
+        padding: 10px 19px;
+    }
+    .product-list-text .buttons{
+        gap: 20px;
+    }
+}
+@media (max-width: 580px){
+    .product-list-card{
+        flex-direction: column;
+        gap: 0;
+    }
+    .product-list-card img{
+        width: 100%;
+        height: 230px;
+    }
+    .product-list-text{
+        width: 100%;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 400px){
+    .product-list-card img{
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

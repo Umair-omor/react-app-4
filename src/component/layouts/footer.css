@@ -1,0 +1,164 @@
+footer{
+    background-color: #000000;
+    padding: 100px 25px 10px 25px;
+}
+.get-start{
+    /* background-color: #dfdfdf; */
+    max-width: 60vw;
+    background: linear-gradient(45deg, #f6d8f8, #b5e8f8);
+    /* background: linear-gradient(45deg, #852b8d, #ec1aff, #00bfff , #00a6dd,#0098ca); */
+    margin: 25px auto auto auto;
+    padding: 20px 40px;
+    border-radius: 7px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transform: translateY(50%);
+    transition: .3s;
+}
+.get-start:hover{
+    background: linear-gradient(-45deg, #f6d8f8, #b5e8f8);
+}
+
+.get-start-text{
+    
+}
+.get-start-text h3{
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.get-start-btn{
+    border: none;
+}
+.get-start-btn{
+    border: none;
+    font-weight: 500;
+}
+.get-start-btn .start-link{
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+
+
+
+.footer-about{
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    padding-bottom: 25px;
+}
+.footer-text,
+.footer-subscribe,
+.footer-social,
+.footer-call{
+    width: 100%;
+    margin: 6px 0;
+}
+.footer-bottom{
+    color: #fff;
+}
+.footer-text p,
+.footer-call .numb{
+    font-size: 15px;
+    font-weight: 400;
+}
+.footer-text h3,
+.footer-subscribe h3,
+.footer-social h3,
+.footer-call h3{
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin-bottom: 12px;
+}
+.footer-subscribe input{
+    padding: 10px 18px;
+    margin-bottom: 5px;
+}
+.footer-subscribe button{
+    padding: 11px 20px;
+    font-size: 15px;
+    border: none;
+    border-radius: 0;
+}
+.social-icons{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.social-icons div{
+    border: 1px solid #fff;
+    padding: 6px 6px 2px 6px;
+    border-radius: 50%;
+    transition: .3s;
+
+}
+.social-icons div:hover{
+    background-color: #ffffff18;
+    transform: translateY(-2px);
+}
+
+.icons{
+    font-size: 19px;
+    color: #fff;
+}
+
+.footer-bottom{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 40px;
+}
+.footer-bottom p{
+    font-size: 15px;
+    text-transform: capitalize;
+}
+.footer-last p{
+    font-size: 14px;
+}
+
+@media (max-width: 920px){
+    .footer-about{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+@media (max-width: 620px){
+    .footer-about{
+        grid-template-columns: auto;
+        justify-content: center;
+    }
+    .footer-bottom{
+        text-align: center;
+    }
+    .get-start{
+        /* background-color: #dfdfdf; */
+        max-width: 75vw;
+        padding: 25px 30px;
+        flex-direction: column;
+        gap: 30px;
+        transform: translateY(45%);
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+

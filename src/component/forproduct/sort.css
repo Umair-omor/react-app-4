@@ -1,0 +1,68 @@
+
+
+.sort{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 10px;
+}
+.view{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 11px;
+}
+.icon{
+    color: #333;
+    font-size: 20px;
+}
+.view-btn{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #777;
+    padding: 4px 6px;
+    border-radius: 3px;
+    background-color: #e6e6e6;
+    transition: .4s;
+}
+
+.view-btn.active {
+    border: 1px solid #777;
+    background-color: #353535;
+    transition: .4s;
+}
+.view-btn.active .icon{
+    color: #fff;
+}
+
+
+
+
+
+
+.abaila{
+    font-size: 15px;
+    font-weight: 500;
+}
+
+
+.select{
+    padding: 7px 15px;
+    border: 1px solid #555;
+    border-radius: 4px;
+    font-size: 15px;
+}
+.select:hover{
+    border: 1px solid #555;
+}
+.option{
+    padding: 6px 15px;
+    border: 1px solid #555;
+    border-radius: 4px;
+    text-decoration: line-through;
+}
+.option:hover{
+    border: 1px solid #555;
+}
